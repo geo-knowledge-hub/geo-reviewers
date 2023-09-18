@@ -1,0 +1,22 @@
+#
+# This file is part of GEO Reviewers.
+#
+# Copyright (C) 2023 GEO Secretariat.
+#
+# GEO Reviewers is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+
+version: '3'
+services:
+  geo-reviewers-db:
+    image: postgres:14.5-alpine
+    container_name: geo-reviewers-db
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    ports:
+      - '5432:5432'
