@@ -36,12 +36,12 @@ services-down:  ## Destroy development services
 #
 # Build
 #
-build:  ## Build CMS
-	docker build -t "geo-cms:$(version)" .
+build:  ## Build `Reviewers manager`
+	docker build -t "geo-reviewers-manager:$(version)" .
 
 
-build-prod:  ## Build production version of the CMS
-	docker build -t "geo-cms:$(version)" -f Dockerfile.prod --build-arg PUBLIC_URL=$(url) .
+build-prod:  ## Build production version of the `Reviewers manager`
+	docker build -t "geo-reviewers-manager:$(version)" -f Dockerfile.prod --build-arg PUBLIC_URL=$(url) .
 
 #
 # Documentation function (thanks for https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html)

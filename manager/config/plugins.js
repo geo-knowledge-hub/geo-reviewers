@@ -43,6 +43,7 @@ module.exports = ({ env }) => ({
       security: [{ bearerAuth: [] }],
     },
   },
+  // ToDo: This plugin will be enable in a future version of the Reviewers manager.
   // upload: {
   //   config: {
   //     provider: 'aws-s3',

@@ -10689,11 +10689,6 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-twitter-api-v2@^1.14.1:
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/twitter-api-v2/-/twitter-api-v2-1.14.3.tgz#babe270a9a3a2b7a92e7b5770f3827d67dbe73a6"
-  integrity sha512-NJeEwlgZ+DKBRky2kLzomeXK0zLQ2dRFY4OxQ2U8gtun8sl5nNM6PTH/AcZyaXoBKlnOWPsOzYMwwjohv/ZFhw==
-
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.4.0.tgz#07b8203bfa7056c0657050e3ccd2c37730bab8f1"
